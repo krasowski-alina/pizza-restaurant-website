@@ -132,7 +132,7 @@ h1 {
     color: #F8B400;
     font-size: 38px;
     text-align: center;
-    
+    /* letter-spacing: 2px; */
 }
 .line {
     background-color: #F1CA89;
@@ -264,8 +264,6 @@ h4 {
     width: 150px;
     font-family: 'Poppins', sans-serif;
     font-size: 13px;
-    /* letter-spacing: 0; */
-
 }
 .name, .cost {
     margin: 2px;
@@ -290,7 +288,93 @@ h4 {
     background-color: transparent;
     border-radius: 30px;
     border:#379237 solid 2px;
-    /* font-family: 'Poppins', sans-serif; */
+
     font-family: 'Dancing Script', cursive;
     font-size: 20px;
+}
+ /* Reviews  */
+#person-img {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+}
+#reviews {
+    width: 100%;
+    margin: 0 auto;
+    background: url("https://img.freepik.com/free-vector/seamless-pizza-ingredients_1176-269.jpg?w=1480&t=st=1671651901~exp=1671652501~hmac=cc5798744d569f6f6afa49f533970419a8cc7f6826bf71b9952460fb729d4a4f") center/cover no-repeat;
+    height: 50vh;
+}
+.reviews-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 36vh;
+    width: 28%;
+    margin: 0 auto;
+    background-color: rgba(55, 146, 55, 0.8);
+    border-radius: 20px;
+}
+ #person-name {
+    font-size: 28px;
+    margin: 0px;
+    color: #F8B400;
+    letter-spacing: 2px;
+    font-family: 'Dancing Script', cursive;
+}
+#person-text {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    padding: 0px 10px;
+    margin: 0;
+}
+.submit {
+font-size: 20px;
+width: 200px;
+margin: 5px 0px 30px 0px;
+}
+.review-btns{
+    width: 100px;
+    font-size: 15px;
+}
+.review-btns, .submit {
+    background-color: #F8B400;
+    color: #fff;
+    padding: 3px;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    box-shadow: black 2px 2px 2px;
+}
+.review-btns:hover {
+    background-color: #fff;
+    color: #F8B400;
+}
+/* Contacts */
+.contacts-container {
+    width: 900px;
+    margin: 0 auto;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input {
+    padding: 10px;
+}
+label {
+    margin: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #8C0000;
+    font-weight: normal;
+}
+.icons-container {
+    display: flex;
+}
+.iconImg {
+    height: 40px;
+    width: 40px;
 }

@@ -144,4 +144,68 @@ function displayMenuItems(menuItems){
         sectionCenter.innerHTML = displayMenu;
 }
 
+// reviews data
+const reviews = [
+  {
+    id: 1,
+    name: "Susan Walter",
+    img:
+      "https://images.unsplash.com/photo-1604364721460-0cbc5866219d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
+    text:
+      "Food has always been excellent never once had a problem with a order I recommend this place to many people and all of them said the same thing. No matter what you order your going to enjoy it",
+  },
+  {
+    id: 2,
+    name: "Julia Jones",
+    img:
+      "https://images.unsplash.com/photo-1534180477871-5d6cc81f3920?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
+    text:
+      "Pizza was very good, the only bad  thing I would say is I would have liked it to be just a bit more crunchy crust but it was still very delicious. We ordered a large Veggie and garlic knots. Both items were absolutely amazing.",
+  },
+  {
+    id: 3,
+    name: "Peter Weber",
+    img:
+      "https://images.unsplash.com/photo-1583195763986-0231686dcd43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2376&q=80",
+    text:
+      "I tried this place last night for the first time and let me just say WOW! This place is SPECTACULAR! They have the BEST garlic knots I've ever had in my life and for the cheapest price ever. The pizza is out of this world .",
+  },
+  {
+    id: 4,
+    name: "Harry Anderson",
+    img:
+      "https://images.unsplash.com/photo-1556474835-b0f3ac40d4d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
+    text:
+      "I was not disappointed, and the food was fantastic. The pizza was cooked perfectly just the way I like it and the garlic knots were some of the best I’ve had in the area. Keep up the good work!",
+  },
+];
+const personImg = document.querySelector("#person-img");
+const personName = document.querySelector("#person-name");
+const personText = document.querySelector("#person-text");
+const next = document.querySelector("#next");
+const prev = document.querySelector("#prev");
+let i = 0;
 
+window.addEventListener("DOMContentLoaded", displayPerson());
+
+function displayPerson(){
+  let item = reviews[i];
+  personImg.src = item.img;
+  personName.textContent = item.name;
+  personText.textContent = item.text;
+  
+}
+next.addEventListener("click", function(){
+  i++;
+    if(i > reviews.length - 1){
+    i = 0;
+  }
+  displayPerson();
+})
+prev.addEventListener("click", function(){
+  i--;
+  if(i < 0){
+    i = reviews.length - 1
+  }
+  displayPerson()
+})
