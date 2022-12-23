@@ -1,3 +1,38 @@
+gsap.from(".nav-item", {
+  x: 300,
+  opacity: 0,
+  delay: 0.6, 
+  duration: 1.5,
+  ease: "power1.in",
+  stagger: 0.6
+})
+gsap.from("h1", {
+  opacity: 0,
+  scale: 2,
+  delay: 0.2, 
+  duration: 1.3,
+  ease: "power1.out",
+})
+gsap.to(".main-page-heading", {
+  x: -15,
+  scale: 1.2,
+  delay: 0.5, 
+  duration: 1.5,
+  ease: "power1.out",
+})
+gsap.to(".main-page-btn", {
+  // scale: 1.2,
+  delay: 0.9, 
+  rotate: 720,
+  duration: 1.3,
+  ease: "power1.out",
+})
+gsap.from(".logo", {
+  y: -100,
+  delay: 1.2, 
+  duration: 1.5,
+  ease: "bounce",
+})
 // Nav Bar
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
@@ -143,7 +178,6 @@ function displayMenuItems(menuItems){
         displayMenu = displayMenu.join("");
         sectionCenter.innerHTML = displayMenu;
 }
-
 // reviews data
 const reviews = [
   {
