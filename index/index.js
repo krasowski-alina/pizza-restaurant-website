@@ -2,9 +2,9 @@ gsap.from(".nav-item", {
   x: 300,
   opacity: 0,
   delay: 0.6, 
-  duration: 1.5,
+  duration: 1,
   ease: "power1.in",
-  stagger: 0.6
+  stagger: 0.
 })
 gsap.from("h1", {
   opacity: 0,
@@ -13,17 +13,18 @@ gsap.from("h1", {
   duration: 1.3,
   ease: "power1.out",
 })
-gsap.to(".main-page-heading", {
+gsap.from(".main-page-heading", {
   x: -15,
+  opacity: 0,
   scale: 1.2,
   delay: 0.5, 
   duration: 1.5,
   ease: "power1.out",
 })
-gsap.to(".main-page-btn", {
-  // scale: 1.2,
-  delay: 0.9, 
-  rotate: 720,
+gsap.from(".main-page-btn", {
+  opacity: 0,
+  scale: 2,
+  delay: 0.8, 
   duration: 1.3,
   ease: "power1.out",
 })
@@ -33,6 +34,7 @@ gsap.from(".logo", {
   duration: 1.5,
   ease: "bounce",
 })
+AOS.init();
 // Nav Bar
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
@@ -40,6 +42,11 @@ hamburger.addEventListener("click", ()=> {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
 })
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+}))
 
 //Menu-slides
 const items = document.querySelectorAll('.item');

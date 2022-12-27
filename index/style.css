@@ -6,6 +6,7 @@
     padding: 0;
     background-color: #F1CA89;
     }
+
     /* Responsive Nav Bar */
     li {
     list-style: none;
@@ -15,6 +16,7 @@
     color: #fff;
     font-size: 25px;
     font-family: 'Poppins', sans-serif;
+    margin-right: 20px;
     }
     header {
     background-color: #8C0000;
@@ -77,6 +79,7 @@
     h1 {
     font-size: 55px;
     color: #F1CA89;
+
     }
     .main-page-heading {
     color: #F8B400;
@@ -248,7 +251,7 @@
     #reviews {
     width: 100%;
     margin: 0 auto;
-    background: url("https://img.freepik.com/free-vector/seamless-pizza-ingredients_1176-269.jpg?w=1480&t=st=1671651901~exp=1671652501~hmac=cc5798744d569f6f6afa49f533970419a8cc7f6826bf71b9952460fb729d4a4f") center/cover no-repeat;
+    background: url("pizza.jpg") center/cover no-repeat;
     height: 50vh;
     }
     .reviews-container {
@@ -256,7 +259,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 36vh;
+    height: 38vh;
     width: 520px;
     margin: 0 auto;
     background-color: rgba(55, 146, 55, 0.8);
@@ -354,22 +357,23 @@
     transition: 0.3s;
     }
     .nav-item {
-    margin: 16px 0px;
+    margin: 16px 0;
     }
     .nav-menu.active {
     left: 0;
     }
-    a {
-    font-size: 20px;
+    .nav-link {
+    font-size: 18px;
     border-bottom: 1px solid #F1CA89;
     }
     /* main page section */
-    .main-page-style, .about-page, .menu, .contacts-container {
+    .main-page-style, #about-page, .menu, .contacts-container {
     width: 650px;
     margin: 0 auto;
     }
     h1 {
     font-size: 45px;
+    margin: 0;
     }
     .main-page-heading {
     font-size: 30px;
@@ -379,9 +383,10 @@
     font-size: 26px;
     font-weight: 800;
     }
-    .making-pizza-img{
+    .making-pizza-img {
     height: 300px;
     }
+    
     /* Menu slides */
     .menu-container {
     display: flex;
@@ -437,7 +442,8 @@
     }
     @media all and (max-width: 500px){
     /* main page section */
-    .main-page-style, .about-page, .menu, 
+
+    .main-page-style, #about-page, .menu, 
     .contacts-container {
     width: 360px;
     margin: 0 auto;
@@ -448,6 +454,7 @@
     }
     h1 {
     font-size: 40px;
+    margin-top: 120px;
     }
     .main-page-btn {
     padding: 8px;
