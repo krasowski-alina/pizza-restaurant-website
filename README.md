@@ -9,5 +9,5 @@ Coded in JavaScript, HTML, CSS and Bootstrap framework.
 
 ### Check out the application
 
-[Weather App](https://weather-test-alina-krasowski.glitch.me/)
+[Mario's Pizza](https://pizza-alina-krasowski.glitch.me/)
 
