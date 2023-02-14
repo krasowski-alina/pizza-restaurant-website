@@ -11,3 +11,4 @@ Coded in JavaScript, HTML, CSS and Bootstrap framework.
 
 [Mario's Pizza](https://pizza-alina-krasowski.glitch.me/)
 
+![pizza](https://user-images.githubusercontent.com/119900960/218829931-7f825258-67e3-4c73-9b5c-b4d019ec0617.jpg)
