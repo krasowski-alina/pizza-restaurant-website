@@ -1,7 +1,7 @@
 # Mario's Pizza
 	• Dynamic and responsive restaurant web site 
 	• Incorporated a filtering function for the menu items and carousel for the reviews.
-	• Enhanced user experience changing background image in accordance with the current local weather.
+	• Added animation effects that improved UX and made the app user-friendly and appealing
 	• Project built with UI/UX and responsive design principles 
 
 ## Tools used
